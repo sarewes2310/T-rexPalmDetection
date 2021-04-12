@@ -9,7 +9,7 @@ pip3 install mediapipe opencv-python numpy #python3
 ```
 
 ## Menjalankan code
-Cara menjalankan code
+Pada code ini untuk menjalankanya seperti dibawah ini.
 ```sh
 python main.py
 ```
