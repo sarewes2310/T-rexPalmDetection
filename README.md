@@ -18,7 +18,7 @@ python main.py
 
 ## Demo
 
-#### Sumber Inspirasi
+## Sumber Inspirasi
 - [Hand gesture detection in real-time on CPU using Python and Mediapipe]
 - [Gesture Volume Control | OpenCV Python 2021 | Computer Vision]
 
