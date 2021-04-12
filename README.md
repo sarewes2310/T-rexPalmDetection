@@ -9,7 +9,7 @@ pip3 install mediapipe opencv-python numpy #python3
 ```
 
 ## Menjalankan code
-Cara menjalankan code
+Pada code ini untuk menjalankanya seperti dibawah ini.
 ```sh
 python main.py
 ```
@@ -18,7 +18,7 @@ python main.py
 
 ## Demo
 
-#### Sumber Inspirasi
+## Sumber Inspirasi
 - [Hand gesture detection in real-time on CPU using Python and Mediapipe]
 - [Gesture Volume Control | OpenCV Python 2021 | Computer Vision]
 
