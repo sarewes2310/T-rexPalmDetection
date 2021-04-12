@@ -18,6 +18,8 @@ def main():
   mp_drawing = mp.solutions.drawing_utils
   mp_hands = mp.solutions.hands
   cap = cv2.VideoCapture(1) # Mengambil data dari video
+  bts_bawah = 40
+  jarak_minimal = 50
 
   with mp_hands.Hands(max_num_hands=1,
                       min_detection_confidence=0.5,
@@ -34,7 +36,6 @@ def main():
       # Merubah warna dari BGR ke RGB
       image = cv2.cvtColor(cv2.flip(image, 1),
                            cv2.COLOR_BGR2RGB)
-      cv2.imshow('Test', cv2.flip(image, 1))
       # To improve performance, optionally mark the image as not writeable to
       # pass by reference.
       image.flags.writeable = False
@@ -82,15 +83,16 @@ def main():
           checkJarak = np.sqrt(jarakX+jarakY)
 
           # Check jarak untuk memilih lompat atau tidak
-          if checkJarak < 20:
+          if checkJarak < bts_bawah:
             print('down', checkJarak)
             keyboard.send("space")
           else:
-            print('up: ', checkJarak)
-          print(f'Nilai Z: {hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].z}')
+            print(f'up: {checkJarak}')
+            # Hitung batas nilai bawah
+            bts_bawah = round(jarak_minimal/100*checkJarak)
 
       # Show window
-      cv2.imshow('MediaPipe Hands', image)
+      cv2.imshow('T-rex Palm Detection', image)
 
       # Close window
       if cv2.waitKey(5) & 0xFF == 27:
