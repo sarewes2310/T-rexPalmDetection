@@ -15,7 +15,7 @@ python main.py
 ```
 
 ## Screenshoot
-
+![ScreenShoot 1](https://github.com/sarewes2310/T-rexPalmDetection/blob/main/asset/jalan_1.PNG)
 ## Demo
 
 ## Sumber Inspirasi
