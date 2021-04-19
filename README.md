@@ -17,6 +17,7 @@ python main.py
 ## Screenshoot
 ![ScreenShoot 1](https://github.com/sarewes2310/T-rexPalmDetection/blob/main/asset/jalan_1.PNG)
 ## Demo
+[![Demo Program](https://github.com/sarewes2310/T-rexPalmDetection/blob/main/asset/jalan_1.gif](https://www.youtube.com/watch?v=)
 
 ## Sumber Inspirasi
 - [Hand gesture detection in real-time on CPU using Python and Mediapipe]
